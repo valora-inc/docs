@@ -14,7 +14,9 @@
     "write-heading-ids": "docusaurus write-heading-ids",
     "typecheck": "tsc",
     "format": "prettier --loglevel error --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "postinstall": "git submodule update --recursive --init",
+    "lint": "echo TODO"
   },
   "dependencies": {
     "@docusaurus/core": "2.1.0",

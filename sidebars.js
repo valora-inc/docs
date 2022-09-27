@@ -12,6 +12,6 @@ const sidebars = {
     },
     'deeplinks',
   ],
-};
+}
 
-module.exports = sidebars;
+module.exports = sidebars
