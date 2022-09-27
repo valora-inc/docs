@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "staging": "valora-docs-staging",
+    "production": "valora-docs"
+  }
+}
