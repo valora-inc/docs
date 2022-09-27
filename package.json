@@ -15,6 +15,7 @@
     "typecheck": "tsc",
     "format": "prettier --loglevel error --write .",
     "format:check": "prettier --check .",
+    "postinstall": "git submodule update --recursive --init",
     "lint": "echo TODO"
   },
   "dependencies": {
