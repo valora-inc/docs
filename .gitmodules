@@ -1,0 +1,3 @@
+[submodule "submodules/wallet"]
+	path = submodules/wallet
+	url = https://github.com/valora-inc/wallet.git
