@@ -1,41 +1,43 @@
-# Website
+# docs
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
-
-### Installation
+## Installation
 
 ```
-$ yarn
+yarn
 ```
 
-### Local Development
+## Development
 
 ```
-$ yarn start
+yarn start
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+This command starts a local development server and opens up a browser
+window. Most changes are reflected live without having to restart the
+server.
 
-### Build
+## Adding new content
 
-```
-$ yarn build
-```
+Docs aggregates content from multiple different projects and
+repositories using Git submodules. Docs stores submodules in
+[submodules/](submodules/] and there's a `postinstall` script to
+initialize all submodules.
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+You can publish content from these other projects or author new
+content by adding .md, .mdx, or .tsx files to [docs/](docs/).
 
-### Deployment
+See the [Docusaurus Guides](https://docusaurus.io/docs/category/guides)
+for more information.
 
-Using SSH:
+## Deployment
 
-```
-$ USE_SSH=true yarn deploy
-```
+Deployment happens automatically with each commit to `main` (_e.g._,
+PR merge).
 
-Not using SSH:
+## Environments
 
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
+- <https://valora-docs-staging.web.app>
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+## Related
+
+This website is built using [Docusaurus 2](https://docusaurus.io/).
