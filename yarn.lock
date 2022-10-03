@@ -2046,7 +2046,7 @@
   resolved "https://registry.npmjs.org/@trysound/sax/-/sax-0.2.0.tgz"
   integrity sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==
 
-"@tsconfig/docusaurus@^1.0.5":
+"@tsconfig/docusaurus@^1.0.6":
   version "1.0.6"
   resolved "https://registry.npmjs.org/@tsconfig/docusaurus/-/docusaurus-1.0.6.tgz"
   integrity sha512-1QxDaP54hpzM6bq9E+yFEo4F9WbWHhsDe4vktZXF/iDlc9FqGr9qlg+3X/nuKQXx8QxHV7ue8NXFazzajsxFBA==
@@ -4902,7 +4902,7 @@ find-up@^5.0.0:
     locate-path "^6.0.0"
     path-exists "^4.0.0"
 
-firebase-tools@^11.11.0:
+firebase-tools@^11.13.0:
   version "11.13.0"
   resolved "https://registry.npmjs.org/firebase-tools/-/firebase-tools-11.13.0.tgz"
   integrity sha512-8p3AAG0DtDl/FF7Zaq5C5y2UoyWGvzVOgPDBjI+ZIPqBXdrAUHhQ/tVN+5J0IbtV+YXTyCmxIKf7kcIenzl2Xg==
