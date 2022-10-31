@@ -1,3 +1,6 @@
 [submodule "submodules/wallet"]
 	path = submodules/wallet
 	url = https://github.com/valora-inc/wallet.git
+[submodule "submodules/dapp-list"]
+	path = submodules/dapp-list
+	url = https://github.com/valora-inc/dapp-list.git
