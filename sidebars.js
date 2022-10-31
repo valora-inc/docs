@@ -14,8 +14,14 @@ const sidebars = {
     {
       type: 'category',
       label: 'List your project in Valora',
-      items: ['listing/overview', 'listing/dapp-guidelines', 'listing/adding-new-dapps', 'listing/user-documentation-best-practices', 'listing/asset-guidelines'],
-    }
+      items: [
+        'listing/overview',
+        'listing/dapp-guidelines',
+        'listing/adding-new-dapps',
+        'listing/user-documentation-best-practices',
+        'listing/asset-guidelines',
+      ],
+    },
   ],
 }
 
