@@ -12,12 +12,17 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Integrate with Valora',
+      label: 'Integrate a dapp',
       items: ['connecting/connecting-dapps', 'connecting/deeplinks'],
     },
     {
+      type: 'doc',
+      id: 'cico',
+      label: 'Integrate a cash-in cash-out provider',
+    },
+    {
       type: 'category',
-      label: 'List your project in Valora',
+      label: 'List a project',
       items: [
         'listing/overview',
         'listing/dapp-guidelines',
