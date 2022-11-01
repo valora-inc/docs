@@ -10,7 +10,11 @@ const sidebars = {
       id: 'index',
       label: 'Intro',
     },
-    'deeplinks',
+    {
+      type: 'category',
+      label: 'Integrate with Valora',
+      items: ['connecting/connecting-dapps', 'connecting/deeplinks'],
+    },
     {
       type: 'category',
       label: 'List your project in Valora',
