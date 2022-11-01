@@ -8,7 +8,7 @@ const sidebars = {
     {
       type: 'doc',
       id: 'index',
-      label: 'Intro',
+      label: 'Introduction',
     },
     {
       type: 'category',
