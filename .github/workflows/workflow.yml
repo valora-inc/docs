@@ -46,7 +46,7 @@ jobs:
       - run: yarn
       - run: yarn build
   deploy-staging:
-    name: Deploy
+    name: Deploy staging
     if: github.ref == 'refs/heads/main'
     needs:
       - lint
@@ -62,5 +62,25 @@ jobs:
       - run: yarn build
       - run: echo '${{ secrets.FIREBASE_SERVICE_ACCOUNT_VALORA_DOCS_STAGING }}' > /dev/shm/gcloud.json
       - run: yarn firebase deploy --project=staging
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS: /dev/shm/gcloud.json
+  deploy-production:
+    name: Deploy production
+    if: github.ref == 'refs/heads/main'
+    needs:
+      - lint
+      - build
+      - deploy-staging
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          check-latest: true
+      - run: yarn
+      - run: yarn build
+      - run: echo '${{ secrets.FIREBASE_SERVICE_ACCOUNT_VALORA_DOCS }}' > /dev/shm/gcloud.json
+      - run: yarn firebase deploy --project=production
         env:
           GOOGLE_APPLICATION_CREDENTIALS: /dev/shm/gcloud.json

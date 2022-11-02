@@ -36,7 +36,8 @@ PR merge).
 
 ## Environments
 
-- <https://valora-docs-staging.web.app>
+- Staging: <https://valora-docs-staging.web.app>
+- Production: <https://valora-docs.web.app> and <https://docs.valora.xyz>
 
 ## Related
 
