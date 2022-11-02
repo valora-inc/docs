@@ -34,7 +34,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/valora-inc/docs/',
+          editUrl: 'https://github.com/valora-inc/docs/edit/main/',
           // The default is /docs, but we don't have anything other content but docs.
           routeBasePath: '/',
         },
