@@ -72,6 +72,8 @@ jobs:
       - build
       - deploy-staging
     runs-on: ubuntu-latest
+    env:
+      GTAG_TRACKING_ID: G-V2EFHZRPWT
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
