@@ -4,6 +4,16 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github')
 const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 
+const buildTimeClassicConfig = {}
+
+// The GitHub workflow sets this environment variable for production.
+if (process.env.GTAG_TRACKING_ID) {
+  buildTimeClassicConfig.gtag = {
+    trackingID: process.env.GTAG_TRACKING_ID,
+    anonymizeIP: true,
+  }
+}
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Valora Docs',
@@ -41,6 +51,7 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        ...buildTimeClassicConfig,
       }),
     ],
   ],
