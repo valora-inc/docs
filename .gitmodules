@@ -4,3 +4,6 @@
 [submodule "submodules/dapp-list"]
 	path = submodules/dapp-list
 	url = https://github.com/valora-inc/dapp-list.git
+[submodule "submodules/nft-list"]
+	path = submodules/nft-list
+	url = https://github.com/valora-inc/nft-list.git
