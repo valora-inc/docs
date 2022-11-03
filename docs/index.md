@@ -11,4 +11,5 @@ assets associated with their project are also listed in Valora.
 
 If you have questions or want to discuss improvements to Valora or
 this documentation, please join our [Discord
-Community](https://discord.com/invite/J5XMtMkwC4).
+Community](https://discord.com/invite/J5XMtMkwC4). `#dapp-dev`
+is a good channel to start a discussion.
