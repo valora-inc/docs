@@ -5,6 +5,8 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
+    "build:production": "sh -ac '. ./.env.production; docusaurus build'",
+    "build:staging": "sh -ac '. ./.env.staging; docusaurus build'",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",

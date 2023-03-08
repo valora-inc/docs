@@ -1,4 +1,5 @@
 // @ts-check
+const includeWatchingAssets = process.env.INCLUDE_WATCHING_ASSETS === 'true'
 
 // https://docusaurus.io/docs/sidebar
 
@@ -13,7 +14,9 @@ const sidebars = {
     {
       type: 'category',
       label: 'Integrate a dapp',
-      items: ['connecting/connecting-dapps', 'connecting/deeplinks'],
+      items: ['connecting/connecting-dapps', 'connecting/deeplinks'].concat(
+        includeWatchingAssets ? ['connecting/watching-assets'] : [],
+      ),
     },
     {
       type: 'doc',
