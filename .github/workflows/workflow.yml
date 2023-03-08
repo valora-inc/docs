@@ -59,7 +59,7 @@ jobs:
           node-version: '16'
           check-latest: true
       - run: yarn
-      - run: yarn build
+      - run: yarn build:staging
       - run: echo '${{ secrets.FIREBASE_SERVICE_ACCOUNT_VALORA_DOCS_STAGING }}' > /dev/shm/gcloud.json
       - run: yarn firebase deploy --project=staging
         env:
@@ -81,7 +81,7 @@ jobs:
           node-version: '16'
           check-latest: true
       - run: yarn
-      - run: yarn build
+      - run: yarn build:production
       - run: echo '${{ secrets.FIREBASE_SERVICE_ACCOUNT_VALORA_DOCS }}' > /dev/shm/gcloud.json
       - run: yarn firebase deploy --project=production
         env:
