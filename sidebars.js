@@ -4,7 +4,28 @@ const includeValoraHooks = process.env.INCLUDE_VALORA_HOOKS === 'true'
 
 // https://docusaurus.io/docs/sidebar
 
-/** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
+const valoraHooks = includeValoraHooks
+  ? [
+      {
+        type: 'category',
+        label: 'Valora Hooks',
+        items: [
+          'hooks/overview',
+          'hooks/platform',
+          {
+            type: 'category',
+            label: 'Hook Types',
+            items: [
+              'hooks/types/position',
+              'hooks/types/name-resolution',
+              'hooks/types/shortcut',
+            ],
+          },
+        ],
+      },
+    ]
+  : []
+
 const sidebars = {
   docsSidebar: [
     {
@@ -36,30 +57,8 @@ const sidebars = {
         'listing/adding-new-erc721-contracts',
       ],
     },
+    ...valoraHooks,
   ],
-}
-
-if (includeValoraHooks) {
-  sidebars.docsSidebar.push(
-    {
-      type: 'category',
-      label: 'Valora Hooks',
-      items: [
-        'hooks/overview',
-        'hooks/platform',
-        {
-          type: 'category',
-          label: 'Hook Types',
-          items: [
-            'hooks/types/position',
-            'hooks/types/name-resolution',
-            'hooks/types/shortcut',
-          ],
-        },
-      ],
-    },
-
-  )
 }
 
 module.exports = sidebars
