@@ -1,5 +1,6 @@
 // @ts-check
 const includeWatchingAssets = process.env.INCLUDE_WATCHING_ASSETS === 'true'
+const includeValoraHooks = process.env.INCLUDE_VALORA_HOOKS === 'true'
 
 // https://docusaurus.io/docs/sidebar
 
@@ -36,6 +37,29 @@ const sidebars = {
       ],
     },
   ],
+}
+
+if (includeValoraHooks) {
+  sidebars.docsSidebar.push(
+    {
+      type: 'category',
+      label: 'Valora Hooks',
+      items: [
+        'hooks/overview',
+        'hooks/platform',
+        {
+          type: 'category',
+          label: 'Hook Types',
+          items: [
+            'hooks/types/position',
+            'hooks/types/name-resolution',
+            'hooks/types/shortcut',
+          ],
+        },
+      ],
+    },
+
+  )
 }
 
 module.exports = sidebars
