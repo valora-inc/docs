@@ -31,7 +31,7 @@ hook, the hook executes in an isolated environment and returns a
 result, and Valora uses the results to extend it's default behavior.
 
 Currently all hooks need to be approved by a Valora engineer before
-being avaliable to users in the Valora wallet. Please contact us if
+being available to users in the Valora wallet. Please contact us if
 you're interested in developing a hook and haven't chatted with us
 yet.
 
