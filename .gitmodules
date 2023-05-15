@@ -7,3 +7,6 @@
 [submodule "submodules/nft-list"]
 	path = submodules/nft-list
 	url = https://github.com/valora-inc/nft-list.git
+[submodule "submodules/hooks"]
+	path = submodules/hooks
+	url = https://github.com/valora-inc/hooks.git
