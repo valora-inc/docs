@@ -54,7 +54,7 @@ const sidebars = {
         'listing/adding-new-dapps',
         'listing/user-documentation-best-practices',
         'listing/asset-guidelines',
-        'listing/adding-new-erc721-contracts',
+        'listing/adding-new-nft-contracts',
       ],
     },
     ...valoraHooks,
