@@ -1,30 +1,7 @@
 // @ts-check
 const includeWatchingAssets = process.env.INCLUDE_WATCHING_ASSETS === 'true'
-const includeValoraHooks = process.env.INCLUDE_VALORA_HOOKS === 'true'
 
 // https://docusaurus.io/docs/sidebar
-
-const valoraHooks = includeValoraHooks
-  ? [
-      {
-        type: 'category',
-        label: 'Valora Hooks',
-        items: [
-          'hooks/overview',
-          'hooks/platform',
-          {
-            type: 'category',
-            label: 'Hook Types',
-            items: [
-              'hooks/types/position',
-              'hooks/types/name-resolution',
-              'hooks/types/shortcut',
-            ],
-          },
-        ],
-      },
-    ]
-  : []
 
 const sidebars = {
   docsSidebar: [
@@ -57,7 +34,23 @@ const sidebars = {
         'listing/adding-new-nft-contracts',
       ],
     },
-    ...valoraHooks,
+    {
+      type: 'category',
+      label: 'Valora Hooks',
+      items: [
+        'hooks/overview',
+        'hooks/platform',
+        {
+          type: 'category',
+          label: 'Hook Types',
+          items: [
+            'hooks/types/position',
+            'hooks/types/name-resolution',
+            'hooks/types/shortcut',
+          ],
+        },
+      ],
+    },
   ],
 }
 
