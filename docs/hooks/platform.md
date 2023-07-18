@@ -30,7 +30,7 @@ environment (like [Secure ECMAScript
 MetaMask Snaps use) and we encourage hook developers to have that
 high-level model in mind when developing their hooks and avoid
 depending on Google Cloud Function specific attributes (_e.g._, reading
-the resevered environment variable `K_SERVICE`)
+the reserved environment variable `K_SERVICE`)
 
 ## Deploying a hook to Valora
 
