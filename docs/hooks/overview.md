@@ -25,10 +25,10 @@ Valora.
 
 ## Developing a hook
 
-A developer can write a short TypeScript program that handle a
+A developer can write a short TypeScript program that handles a
 specific hook type. A user's Valora wallet passes information to the
 hook, the hook executes in an isolated environment and returns a
-result, and Valora uses the results to extend it's default behavior.
+result, and Valora uses the results to extend its default behavior.
 
 Currently all hooks need to be approved by a Valora engineer before
 being available to users in the Valora wallet. Please contact us if
