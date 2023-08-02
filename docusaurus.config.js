@@ -44,7 +44,15 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/valora-inc/docs/edit/main/',
+          editUrl: ({ versionDocsDirPath, docPath }) => {
+            if (docPath.startsWith('hooks/')) {
+              return `https://github.com/valora-inc/hooks/edit/main/${versionDocsDirPath}/${docPath.replace(
+                /^hooks\//,
+                '',
+              )}`
+            }
+            return `https://github.com/valora-inc/docs/edit/main/${versionDocsDirPath}/${docPath}`
+          },
           // The default is /docs, but we don't have anything other content but docs.
           routeBasePath: '/',
         },
@@ -54,6 +62,22 @@ const config = {
         ...buildTimeClassicConfig,
       }),
     ],
+  ],
+  plugins: [
+    function (context, options) {
+      return {
+        name: 'webpack-configuration-plugin',
+        configureWebpack(config, isServer, utils) {
+          return {
+            resolve: {
+              // This is needed for our submodules docs to work correctly with Docusaurus.
+              // See https://github.com/facebook/docusaurus/issues/3272
+              symlinks: false,
+            },
+          }
+        },
+      }
+    },
   ],
 
   themeConfig:
