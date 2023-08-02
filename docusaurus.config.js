@@ -71,6 +71,8 @@ const config = {
           return {
             resolve: {
               // This is needed for our submodules docs to work correctly with Docusaurus.
+              // Setting this to `false` doesn't mean it doesn't follow symlinks, it means it doesn't fully resolve them
+              // which is the default and doesn't work with our submodule symlink setup.
               // See https://github.com/facebook/docusaurus/issues/3272
               symlinks: false,
             },
