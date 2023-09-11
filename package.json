@@ -35,7 +35,7 @@
     "@valora/prettier-config": "^0.0.1",
     "firebase-tools": "^12.4.8",
     "prettier": "^2.8.8",
-    "typescript": "^5.1.6"
+    "typescript": "^5.2.2"
   },
   "browserslist": {
     "production": [
