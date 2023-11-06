@@ -30,7 +30,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "2.4.1",
+    "@docusaurus/module-type-aliases": "3.0.0",
     "@tsconfig/docusaurus": "^2.0.0",
     "@valora/prettier-config": "^0.0.1",
     "firebase-tools": "^12.4.8",
