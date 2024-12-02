@@ -9,4 +9,4 @@
 	url = https://github.com/valora-inc/nft-list.git
 [submodule "submodules/hooks"]
 	path = submodules/hooks
-	url = https://github.com/valora-inc/hooks.git
+	url = https://github.com/mobilestack-xyz/hooks.git
