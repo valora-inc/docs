@@ -1,9 +1,10 @@
-// @ts-check
+import type { SidebarsConfig } from '@docusaurus/plugin-content-docs'
+
 const includeWatchingAssets = process.env.INCLUDE_WATCHING_ASSETS === 'true'
 
 // https://docusaurus.io/docs/sidebar
 
-const sidebars = {
+const sidebars: SidebarsConfig = {
   docsSidebar: [
     {
       type: 'doc',
@@ -47,4 +48,4 @@ const sidebars = {
   ],
 }
 
-module.exports = sidebars
+export default sidebars
