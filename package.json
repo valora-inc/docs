@@ -33,7 +33,7 @@
     "@docusaurus/module-type-aliases": "3.10.2",
     "@tsconfig/docusaurus": "^2.0.9",
     "@valora/prettier-config": "^0.0.1",
-    "firebase-tools": "^13.35.1",
+    "firebase-tools": "^15.29.0",
     "prettier": "^3.9.6",
     "typescript": "^5.9.3"
   },
